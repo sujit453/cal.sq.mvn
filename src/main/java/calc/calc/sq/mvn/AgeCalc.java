@@ -1,6 +1,7 @@
 package calc.calc.sq.mvn;
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.Arrays;
 import java.io.Externalizable;
 import java.io.IOException;
 import java.io.ObjectInput;
@@ -15,7 +16,8 @@ public class AgeCalc implements Externalizable {
 	public static String calculateAge(String inputDate) throws Exception{
 		AgeCalc obj = new AgeCalc(inputDate);
 		String temp[] = inputDate.split("-");
-		String date1 = temp.toString();
+		//String date1 = temp.toString();
+		String date1 = Arrays.toString(temp);
 		String resultString = "You are ";
 		int sum = 0;
 	    LocalDate todayDate = LocalDate.now();
