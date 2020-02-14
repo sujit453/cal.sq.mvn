@@ -10,6 +10,9 @@ import java.time.DateTimeException;
 
 public class AgeCalc implements Externalizable {
 	 String inputDate;
+	 public AgeCalc(){
+			
+		}
 	public AgeCalc(String inputDate){
 		this.inputDate = inputDate;
 	}
@@ -31,8 +34,8 @@ public class AgeCalc implements Externalizable {
 		    	throw new DateTimeException("Invalid day exception");
 		    }
 		    if(months < 0){
-		    	//sum=++sum;
-		    	//System.out.println(obj.getClass());
+		    	sum=++sum;
+		    	
 		    	throw new DateTimeException("Invalid month exception");
 		    }
 		    if(years < 0){
