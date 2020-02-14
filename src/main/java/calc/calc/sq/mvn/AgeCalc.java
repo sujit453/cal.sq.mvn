@@ -16,7 +16,6 @@ public class AgeCalc implements Externalizable {
 		AgeCalc obj = new AgeCalc(inputDate);
 		String temp[] = inputDate.split("-");
 		String date1 = temp.toString();
-		System.out.println(date1);
 		String resultString = "You are ";
 		int sum = 0;
 	    LocalDate todayDate = LocalDate.now();
@@ -31,7 +30,7 @@ public class AgeCalc implements Externalizable {
 		    }
 		    if(months < 0){
 		    	//sum=++sum;
-		    	System.out.println(obj.getClass());
+		    	//System.out.println(obj.getClass());
 		    	throw new DateTimeException("Invalid month exception");
 		    }
 		    if(years < 0){
